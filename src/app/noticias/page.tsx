@@ -1,5 +1,5 @@
 import { SVGProps } from "react";
-import { TeamIcon } from "../component/9zlogo"
+import { TeamIcon } from "../noticias/9zlogo"
 
 export function noticias() {
   return (

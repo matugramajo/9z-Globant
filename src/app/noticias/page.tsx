@@ -1,41 +1,45 @@
-import { SVGProps } from "react";
-import { TeamIcon } from "../noticias/9zlogo"
+import React from "react";
+import Link from 'next/link';
+import { TeamIcon } from "../9zlogo"
 
-export function noticias() {
+const Noticias = () => {
   return (
     <>
-      <header className="bg-[#0c0c0c] text-white">
-        <nav className="container mx-auto flex items-center justify-between py-4">
-          <div className="flex items-center space-x-8">
+      <header className="bg-[#0c0c0c] text-white font-mono text-xl tracking-wide">
+      <div className="flex flex-row pb-2">
+          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
             <a className="text-2xl font-bold" href="#">
-            <TeamIcon className="h-10 w-10"/>
-            </a>
-          </div>
-          <div className="flex items-center space-x-4">
-          <a className=" hover:text-lime-400" href="#">
-              INICIO
-            </a>
-            <a className="hover:text-lime-400" href="#">
               NOTICIAS
             </a>
-            <a className="hover:text-lime-400" href="#">
-              EQUIPOS
-            </a>
-            <a className="hover:text-lime-400" href="#">
-              PARTIDOS
-            </a>
-            <a className="hover:text-lime-400" href="#">
-              HISTORIA
-            </a>
           </div>
-        </nav>
+          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
+            <Link href="/equipos" className="hover:text-lime-400">
+              EQUIPOS
+            </Link>
+          </div>
+          <div className="flex items-center justify-center space-x-8 basis-1/3">
+            <Link href="/" className="hover:text-lime-400">
+              <TeamIcon/>
+            </Link>
+          </div>
+          <div className="flex items-center justify-center space-x-8 basis-1/3">
+            <Link href="/partidos" className="hover:text-lime-400">
+              PARTIDOS
+            </Link>
+          </div>
+          <div className="flex items-center justify-center space-x-8 basis-1/3">
+            <Link href="/historia" className="hover:text-lime-400">
+              HISTORIA
+            </Link>
+          </div>
+        </div>
       <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
       <main className="bg-[#121212] text-white">
 
       </main>
     </>
-  )
-}
+  );
+};
 
-export default noticias;
+export default Noticias;

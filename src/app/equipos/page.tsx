@@ -1,8 +1,8 @@
 import React from "react";
 import Link from 'next/link';
-import { TeamIcon } from "../app/9zlogo"
+import { TeamIcon } from "../9zlogo"
 
-const Page: React.FC = () => {
+const Equipos = () => {
   return (
     <>
       <header className="bg-[#0c0c0c] text-white font-mono text-xl tracking-wide">
@@ -13,14 +13,14 @@ const Page: React.FC = () => {
             </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <Link href="/equipos" className="hover:text-lime-400">
+            <a className="text-2xl font-bold" href="#">
               EQUIPOS
-            </Link>
+            </a>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <a className="text-2xl font-bold" href="#">
+            <Link href="/" className="hover:text-lime-400">
               <TeamIcon/>
-            </a>
+            </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3">
             <Link href="/partidos" className="hover:text-lime-400">
@@ -36,12 +36,10 @@ const Page: React.FC = () => {
       <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
       <main className="bg-[#121212] text-white">
-      <div className="flex flex-row pt-10">
-        <img src="/banner.png" className="object-fill" />
-      </div>
+
       </main>
     </>
   );
 };
 
-export default Page;
+export default Equipos;

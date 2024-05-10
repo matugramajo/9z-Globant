@@ -66,7 +66,9 @@ const Equipos = () => {
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a href="#">Inicio</a>
+                    <a href="#" className="hover:text-lime-400 ">
+                      Inicio
+                    </a>
                   </li>
                   <li className="mb-4">
                     <Link href="/partidos" className="hover:text-lime-400">

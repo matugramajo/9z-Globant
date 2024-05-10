@@ -203,7 +203,7 @@ const Noticias = () => {
                   Violeta será el día Lunes, a las 14:00 hs 🇦🇷 vs VikingsKR. El
                   formato del torneo esta dividido en dos fases: Grupos: formato
                   GSL a BO3. Playoffs: eliminación simple a BO3. El prize pool
-                  del torneo es: $50,000 USD a repartir 190 puntos "RGL" para la
+                  del torneo es: $50,000 USD a repartir 190 puntos RGL para la
                   clasificación a la RES Regional Champions.
                 </p>
               </div>

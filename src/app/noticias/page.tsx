@@ -38,8 +38,6 @@ const Noticias = () => {
       <main className="bg-[#121212] text-white">
         <div className="container my-24 mx-auto md:px-6">
           <section className="mb-32 text-center md:text-left">
-            <h2 className="mb-12 text-center text-3xl font-bold">Noticias</h2>
-
             <div className="mb-12 grid items-center gap-x-6 md:grid-cols-2 xl:gap-x-12">
               <div className="mb-6 md:mb-0">
                 <div

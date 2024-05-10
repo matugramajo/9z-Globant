@@ -13,9 +13,9 @@ const Equipos = () => {
             </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <a className="text-2xl font-bold" href="#">
+            <Link href="/equipos" className="hover:text-lime-400">
               EQUIPOS
-            </a>
+            </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3">
             <Link href="/" className="hover:text-lime-400">
@@ -36,116 +36,36 @@ const Equipos = () => {
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
       <main className="bg-[#121212] text-white">
-        <div className="bg-white dark:bg-[#121212] h-full py-6 sm:py-8 lg:py-12">
-          <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-            <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-              <div className="flex items-center gap-12">
-                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white"></h2>
+        <div className="container my-24 mx-auto md:px-6">
+          <section className="mb-32 text-center">
+            <div className="grid gap-6 md:grid-cols-3 xl:gap-x-12">
+              <div className="mb-6 lg:mb-0">
+                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                  <div className="flex">
+                    <div
+                      className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      <img src="/dudu2.png" className="w-full" />
+                      <a href="#!">
+                        <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h5 className="mb-2 text-lg font-bold">Facududu</h5>
+                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                      Facundo Dudulec Cancino
+                    </h6>
+                    <ul className="mb-6 flex justify-center">
+                      <li>Argentina - 22 años</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-              <Link
-                href="/cs2main"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/CS2MAIN.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  CS2 Main
-                </span>
-              </Link>
-
-              <Link
-                href="/cs2ac"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/CS2ACADEMY.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  CS2 Academy
-                </span>
-              </Link>
-
-              <Link
-                href="/valovcl"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/VALOVCL.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Valorant VCL
-                </span>
-              </Link>
-
-              <Link
-                href="/valogc"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/VALOGC.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Valorant GC
-                </span>
-              </Link>
-              <Link
-                href="/sim"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/SIM.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Sim Racing
-                </span>
-              </Link>
-              <Link
-                href="/pubg"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              >
-                <img
-                  src="/PUBG.png"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  PUBG Mobile
-                </span>
-              </Link>
-            </div>
-          </div>
+          </section>
         </div>
       </main>
 

@@ -1,9 +1,8 @@
 export function TeamIcon(props: React.HTMLAttributes<SVGElement>) {
   return (
     <svg
+      className="size-[90px] md:size-[120px]"
       xmlns="http://www.w3.org/2000/svg"
-      width="90.000000pt"
-      height="90.000000pt"
       viewBox="0 0 799.000000 669.000000"
       preserveAspectRatio="xMidYMid meet"
     >

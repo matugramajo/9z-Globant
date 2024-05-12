@@ -1,5 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import {
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+  Transition,
+} from "@headlessui/react";
 import { TeamIcon } from "../app/9zlogo";
 
 const Page: React.FC = () => {
@@ -41,68 +48,71 @@ const Page: React.FC = () => {
             </a>
           </div>
           <div className="flex items-center">
-            <button
-              data-collapse-toggle="navbar-hamburger"
-              type="button"
-              className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-200 rounded-lg focus:outline-none"
-              aria-controls="navbar-hamburger"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+            <Menu>
+              <MenuButton>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </MenuButton>
+              <Transition
+                enter="transition ease-out duration-75"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="transition ease-in duration-100"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-
-            <div className="hidden w-full" id="navbar-hamburger">
-              <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600"
-                    aria-current="page"
-                  >
-                    Noticias
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                  >
-                    Equipos
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
-                  >
-                    Partidos
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                  >
-                    Historia
-                  </a>
-                </li>
-              </ul>
-            </div>
+                <MenuItems
+                  anchor="bottom end"
+                  className="[--anchor-gap:38px] w-52 origin-top-right rounded-xl border border-white/5 bg-black/75 p-1 text-white focus:outline-none flex flex-col items-center"
+                >
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/noticias"
+                    >
+                      Noticias
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/equipos"
+                    >
+                      Equipos
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/partidos"
+                    >
+                      Partidos
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/historia"
+                    >
+                      Historia
+                    </a>
+                  </MenuItem>
+                </MenuItems>
+              </Transition>
+            </Menu>
           </div>
         </nav>
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
@@ -117,7 +127,7 @@ const Page: React.FC = () => {
 
         <nav className="ml-auto gap-6 text-lg flex md:hidden">
           <div className="flex flex-row pt-10 pb-10">
-            <img src="/bannermobile.gif" className="object-fill" alt="GIF" />
+            <img src="/bannermobile.gif" className="object-fill" />
           </div>
         </nav>
       </main>

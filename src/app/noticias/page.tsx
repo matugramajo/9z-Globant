@@ -1,16 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import {
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+  Transition,
+} from "@headlessui/react";
 import { TeamIcon } from "../9zlogo";
 
 const Noticias = () => {
   return (
     <>
-      <header className="bg-[#0c0c0c] text-white font-mono text-xl tracking-wide">
-        <div className="flex flex-row pb-2">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide">
+        <nav className="ml-auto gap-6 hidden md:flex">
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <a className="text-2xl font-bold" href="#">
+            <Link href="/noticias" className="hover:text-lime-400">
               NOTICIAS
-            </a>
+            </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
             <Link href="/equipos" className="hover:text-lime-400">
@@ -18,9 +25,9 @@ const Noticias = () => {
             </Link>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <Link href="/" className="hover:text-lime-400">
+            <a className="text-2xl font-bold hover:text-lime-400 ms-5" href="#">
               <TeamIcon />
-            </Link>
+            </a>
           </div>
           <div className="flex items-center justify-center space-x-8 basis-1/3">
             <Link href="/partidos" className="hover:text-lime-400">
@@ -32,7 +39,82 @@ const Noticias = () => {
               HISTORIA
             </Link>
           </div>
-        </div>
+        </nav>
+        <nav className="text-lg flex md:hidden justify-between px-4">
+          <div className="w-10"></div>
+          <div className="flex ">
+            <a className="hover:text-lime-400" href="/">
+              <TeamIcon />
+            </a>
+          </div>
+          <div className="flex items-center">
+            <Menu>
+              <MenuButton>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </MenuButton>
+              <Transition
+                enter="transition ease-out duration-75"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="transition ease-in duration-100"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <MenuItems
+                  anchor="bottom end"
+                  className="[--anchor-gap:38px] w-52 origin-top-right rounded-xl border border-white/5 bg-black/75 p-1 text-white focus:outline-none flex flex-col items-center"
+                >
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/noticias"
+                    >
+                      Noticias
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/equipos"
+                    >
+                      Equipos
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/partidos"
+                    >
+                      Partidos
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
+                      href="/historia"
+                    >
+                      Historia
+                    </a>
+                  </MenuItem>
+                </MenuItems>
+              </Transition>
+            </Menu>
+          </div>
+        </nav>
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
       <main className="bg-[#121212] text-white">

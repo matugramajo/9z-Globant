@@ -119,7 +119,7 @@ const Partidos = () => {
       </header>
       <main className="bg-[#121212] text-white"></main>
 
-      <footer className="bg-white dark:bg-[#000000]">
+      <footer className="bg-[#000000]">
         <div style={{ borderTop: "2px solid #a3e635" }}></div>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">

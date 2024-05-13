@@ -118,11 +118,11 @@ const Equipos = () => {
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
       <main className="bg-[#121212] text-white">
-        <div className="bg-white dark:bg-[#121212] h-full py-6 sm:py-8 lg:py-12">
+        <div className="bg-[#121212] h-full py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
             <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
               <div className="flex items-center gap-12">
-                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white"></h2>
+                <h2 className="text-2xl font-bold  lg:text-3xl text-white"></h2>
               </div>
             </div>
 
@@ -231,25 +231,16 @@ const Equipos = () => {
         </div>
       </main>
 
-      <footer className="bg-white dark:bg-[#000000]">
+      <footer className="bg-[#000000]">
         <div style={{ borderTop: "2px solid #a3e635" }}></div>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <a
-                href="https://9z.gg/inicio"
-                className="flex items-center"
-                target="_blank"
-              >
-                <img src="/9z.png" className="h-12 me-15" />
-              </a>
-            </div>
+          <div className="md:flex md:justify-center">
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold  uppercase text-white">
                   Links
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className=" text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
                       href="https://shop.9z.gg"
@@ -277,10 +268,10 @@ const Equipos = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold  uppercase text-white">
                   Contacto
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className=" text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
                       href="https://www.instagram.com/9zteam/?hl=es"
@@ -321,9 +312,9 @@ const Equipos = () => {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            <span className="text-sm sm:text-center text-gray-400">
               <a
                 href="https://twitter.com/_____matilde"
                 className="hover:text-lime-400"

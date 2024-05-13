@@ -119,17 +119,13 @@ const Equipos = () => {
       </header>
 
       <main className="bg-[#121212] text-white">
-        <div className="container my-24 mx-auto md:px-6">
-          <section className="mb-32 text-center">
+        <div className="container px-auto md:px-6 xl:px-6">
+          <section className="pb-32 text-center">
             <div className="grid gap-6 md:grid-cols-3 xl:gap-x-12">
-              <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="pb-6">
+                <div className="relative block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
-                    <div
-                      className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                      data-te-ripple-init
-                      data-te-ripple-color="light"
-                    >
+                    <div className="relative px-4 -pt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                       <img src="/divine.png" className="w-full" />
                       <a href="#!">
                         <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
@@ -137,24 +133,20 @@ const Equipos = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h5 className="mb-2 text-lg font-bold">divine</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h5 className="pb-2 text-lg font-bold">divine</h5>
+                    <h6 className="pb-4 font-medium text-primary-400">
                       Gustavo Santicioli Altapini
                     </h6>
-                    <ul className="mb-6 flex justify-center">
+                    <ul className="pb-6 flex justify-center">
                       <li>Brasil - 19 años</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="pb-6 lg:mb-0">
+                <div className="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
-                    <div
-                      className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                      data-te-ripple-init
-                      data-te-ripple-color="light"
-                    >
+                    <div className="relative px-4 -pt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                       <img src="/maxoff.png" className="w-full" />
                       <a href="#!">
                         <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
@@ -162,24 +154,20 @@ const Equipos = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h5 className="mb-2 text-lg font-bold">MaxOff</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h5 className="pb-2 text-lg font-bold">MaxOff</h5>
+                    <h6 className="pb-4 font-medium text-primary-400">
                       Maximiliano Elefanté
                     </h6>
-                    <ul className="mb-6 flex justify-center">
+                    <ul className="pb-6 flex justify-center">
                       <li>Argentina - 19 años</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="pb-6 lg:pb-0">
+                <div className="relative block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
-                    <div
-                      className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-                      data-te-ripple-init
-                      data-te-ripple-color="light"
-                    >
+                    <div className="relative px-4 -pt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                       <img src="/slashzz.png" className="w-full" />
                       <a href="#!">
                         <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
@@ -187,21 +175,21 @@ const Equipos = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h5 className="mb-2 text-lg font-bold">slashzz</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h5 className="pb-2 text-lg font-bold">slashzz</h5>
+                    <h6 className="pb-4 font-medium text-primary-400">
                       Majed Ahmad
                     </h6>
-                    <ul className="mb-6 flex justify-center">
+                    <ul className="pb-6 flex justify-center">
                       <li>Brasil - 21 años</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="pb-6 lg:mb-0">
+                <div className="relative block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
                     <div
-                      className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                      className="relative px-4 -pt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                       data-te-ripple-init
                       data-te-ripple-color="light"
                     >
@@ -212,18 +200,18 @@ const Equipos = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h5 className="mb-2 text-lg font-bold">esp1rit_o</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h5 className="pb-2 text-lg font-bold">esp1rit_o</h5>
+                    <h6 className="pb-4 font-medium text-primary-400">
                       Victor Menezes
                     </h6>
-                    <ul className="mb-6 flex justify-center">
+                    <ul className="pb-6 flex justify-center">
                       <li>Brasilero - 30 años</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              <div className="pb-6 lg:pb-0">
+                <div className="relative block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
                     <div
                       className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
@@ -238,7 +226,7 @@ const Equipos = () => {
                   </div>
                   <div className="p-6">
                     <h5 className="mb-2 text-lg font-bold">neozix</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h6 className="mb-4 font-medium text-primary-400">
                       Isaac Bruce
                     </h6>
                     <ul className="mb-6 flex justify-center">
@@ -248,7 +236,7 @@ const Equipos = () => {
                 </div>
               </div>
               <div className="mb-6 lg:mb-0">
-                <div className="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div className="relative block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
                   <div className="flex">
                     <div
                       className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
@@ -263,7 +251,7 @@ const Equipos = () => {
                   </div>
                   <div className="p-6">
                     <h5 className="mb-2 text-lg font-bold">lezy (Stand In)</h5>
-                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                    <h6 className="mb-4 font-medium text-primary-400">
                       Lucas Motta
                     </h6>
                     <ul className="mb-6 flex justify-center">
@@ -277,19 +265,10 @@ const Equipos = () => {
         </div>
       </main>
 
-      <footer className="bg-white dark:bg-[#000000]">
+      <footer className="bg-[#000000]">
         <div style={{ borderTop: "2px solid #a3e635" }}></div>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <a
-                href="https://9z.gg/inicio"
-                className="flex items-center"
-                target="_blank"
-              >
-                <img src="/9z.png" className="h-12 me-15" />
-              </a>
-            </div>
+          <div className="md:flex md:justify-center">
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">

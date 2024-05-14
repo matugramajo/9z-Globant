@@ -12,7 +12,7 @@ import { TeamIcon } from "../9zlogo";
 const Historia = () => {
   return (
     <>
-      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0 z-10">
         <nav className="ml-auto gap-6 hidden md:flex">
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
             <Link href="/noticias" className="hover:text-lime-400">
@@ -117,7 +117,184 @@ const Historia = () => {
         </nav>
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </header>
-      <main className="bg-[#121212] text-white">
+      <main className="bg-[#000000] text-white">
+        <section className="bg-[#000000]">
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div className="font-light  sm:text-lg text-gray-400">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">
+                Elevando el Estandarte de los Esports en América Latina
+              </h2>
+              <p className="mb-4 ">
+                En 2018, nació 9z Team bajo el liderazgo del popular streamer
+                argentino Francisco Postiglione, mejor conocido como
+                Frankkaster. Desde sus inicios, el equipo demostró un talento
+                excepcional en los Esports latinoamericanos, consolidándose
+                rápidamente como una potencia en la región.
+              </p>
+              <p className="">
+                Conformado por jugadores provenientes de Argentina, Uruguay,
+                Brasil, Chile y México, 9z Team ha brillado en diversas
+                disciplinas, incluyendo Counter Strike, Valorant, Sim Racing y
+                R6. Su versatilidad y habilidad en múltiples juegos les han
+                permitido ganarse un lugar destacado entre las organizaciones
+                más reconocidas a nivel global.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <img
+                className="w-full rounded-lg"
+                src="/inicioscs.png"
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src="/inicioslol.png"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:pb-16 lg:px-6">
+            <div className="font-light  sm:text-lg text-gray-400">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">
+                Del Juego Local a la Arena Global
+              </h2>
+              <p className="mb-4 ">
+                Los fundamentos de 9z Globant Team se cimientan en la pasión
+                desenfrenada por los videojuegos y el espíritu competitivo.
+                Desde sus humildes comienzos, el club ha abrazado una dedicación
+                inflexible hacia el crecimiento continuo y la excelencia en el
+                campo de juego. Esta dedicación ha sido la chispa que ha
+                encendido su ascenso fulgurante, llevándolos de ser un modesto
+                equipo local a una destacada figura en el escenario global de
+                los esports.
+              </p>
+              <p className="">
+                El recorrido de 9z Team ha sido una saga repleta de hitos
+                impresionantes, desde alcanzar el quinto puesto en el campeonato
+                mundial de Fortnite, hasta lograr una clasificación histórica
+                para un Major de CS:GO y recibir el reconocimiento como el mejor
+                equipo de América Latina en Valorant en el año 2023.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8 sm:order-first">
+              <img
+                className="w-full rounded-lg"
+                src="https://pbs.twimg.com/media/FtpDmOEWwAA_unY.jpg:large"
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src="/king.png"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div className="font-light  sm:text-lg text-gray-400">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">
+                Talentos y Jugadores Emblemáticos
+              </h2>
+              <p className="mb-4 ">
+                La historia de 9z Globant Team está impregnada de talento y
+                habilidades excepcionales, personificadas en sus jugadores
+                emblemáticos que han dejado una huella indeleble en la escena de
+                los esports. A lo largo de los años, el club ha sido el hogar de
+                una impresionante lista de jugadores cuyo virtuosismo ha sido
+                fundamental para su éxito continuo.
+              </p>
+              <p className="">
+                Cada miembro del equipo aporta una combinación única de
+                habilidades, estilo de juego y experiencia, contribuyendo de
+                manera significativa a las victorias y logros de 9z Globant Team
+                en los campos de batalla virtuales. Su compromiso, dedicación y
+                pasión por los videojuegos se reflejan en cada partida,
+                inspirando a fans y rivales por igual y solidificando su estatus
+                como una fuerza imparable en el mundo de los esports.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <img
+                className="w-full rounded-lg"
+                src="/luken.png"
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src="/maxfestejo.png"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:pb-16 lg:px-6">
+            <div className="font-light  sm:text-lg text-gray-400">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">
+                Alianzas Estratégicas y Apoyo
+              </h2>
+              <p className="mb-4 ">
+                9z Globant Team ha ascendido en el mundo de los esports gracias
+                a su enfoque estratégico en la formación de alianzas con líderes
+                de la industria tecnológica y de los esports.
+              </p>
+              <p className="">
+                Su colaboración con Globant, una empresa destacada en América
+                Latina, ha sido esencial para su crecimiento y desarrollo. Esta
+                asociación ha proporcionado al equipo recursos cruciales, desde
+                financiamiento hasta asesoramiento estratégico, permitiéndoles
+                expandir su alcance y fortalecer su posición en el mercado.
+                Además, otras alianzas con empresas clave en la industria han
+                brindado oportunidades adicionales de patrocinio y acceso
+                exclusivo a eventos, contribuyendo así al ascenso meteórico de
+                9z Globant Team en la escena de los esports.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8 sm:order-first">
+              <img
+                className="w-full rounded-lg"
+                src="https://infosertecblog.files.wordpress.com/2024/03/240301-5.jpg?w=683"
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src="/9zgalianza.jpg"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div className="font-light  sm:text-lg text-gray-400">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">
+                Compromiso con la Comunidad
+              </h2>
+              <p className="mb-4 ">
+                El compromiso de 9z Globant Team con la comunidad de jugadores
+                en América Latina va más allá de la búsqueda de la victoria en
+                las competiciones. El equipo ha demostrado un firme compromiso
+                con sus seguidores a través de diversas iniciativas. Mediante la
+                organización de eventos locales, transmisiones en vivo y
+                actividades interactivas, 9z Globant Team ha creado un espacio
+                de encuentro donde los aficionados pueden conectarse
+                directamente con sus ídolos y compartir su pasión por los
+                esports.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <img
+                className="w-full rounded-lg"
+                src="/quedate.png"
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src="/hinchada.jpg"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+        </section>
         <div style={{ borderBottom: "2px solid #a3e635" }}></div>
       </main>
 

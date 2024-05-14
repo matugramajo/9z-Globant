@@ -12,7 +12,7 @@ import { TeamIcon } from "../9zlogo";
 const Equipos = () => {
   return (
     <>
-      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide z-10">
         <nav className="ml-auto gap-6 hidden md:flex">
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
             <Link href="/noticias" className="hover:text-lime-400">
@@ -138,12 +138,8 @@ const Equipos = () => {
                   </div>
                   <div className="p-6">
                     <h5 className="mb-2 text-lg font-bold">MAX</h5>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      Maximiliano Gonzalez
-                    </h6>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      IGL
-                    </h6>
+                    <h6 className="mb-4 font-medium">Maximiliano Gonzalez</h6>
+                    <h6 className="mb-4 font-medium">IGL</h6>
                     <ul className="mb-6 flex justify-center">
                       <li>Uruguayo - 24 años</li>
                     </ul>
@@ -166,12 +162,8 @@ const Equipos = () => {
                   </div>
                   <div className="p-6">
                     <h5 className="mb-2 text-lg font-bold">DGT</h5>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      Franco Garcia
-                    </h6>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      Rifler
-                    </h6>
+                    <h6 className="mb-4 font-medium">Franco Garcia</h6>
+                    <h6 className="mb-4 font-medium">Rifler</h6>
                     <ul className="mb-6 flex justify-center">
                       <li>Uruguayo - 22 años</li>
                     </ul>
@@ -194,12 +186,8 @@ const Equipos = () => {
                   </div>
                   <div className="p-6">
                     <h5 className="mb-2 text-lg font-bold">Buda</h5>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      Nicolas Kramer
-                    </h6>
-                    <h6 className="mb-4 font-medium text-primary text-primary-400">
-                      Rifler
-                    </h6>
+                    <h6 className="mb-4 font-medium">Nicolas Kramer</h6>
+                    <h6 className="mb-4 font-medium">Rifler</h6>
                     <ul className="mb-6 flex justify-center">
                       <li>Argentino - 20 años</li>
                     </ul>

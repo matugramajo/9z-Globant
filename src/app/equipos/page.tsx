@@ -12,7 +12,7 @@ import { TeamIcon } from "../9zlogo";
 const Equipos = () => {
   return (
     <>
-      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0 z-10">
         <nav className="ml-auto gap-6 hidden md:flex">
           <div className="flex items-center justify-center space-x-8 basis-1/3 ">
             <Link href="/noticias" className="hover:text-lime-400">

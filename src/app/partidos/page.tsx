@@ -137,7 +137,8 @@ const Partidos = () => {
       </header>
       <main className="bg-[#000000] text-white">
         {/* Match 1*/}
-        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+        <div className="pt-14"></div>
+        <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 py-5">
           {/* Contenedor fecha */}
           <p className="md:text-lg text-sm font-semibold  text-white text-center">
             16 de Mayo 2024

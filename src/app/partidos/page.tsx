@@ -242,7 +242,7 @@ const Partidos = () => {
                 <div className="h-11 w-11 ">
                   <img src="/9z.png" className="w-full" />
                 </div>
-                <div className="content-center">
+                <div className="content-center pt-2">
                   <p className="text-center text-sm">VS</p>
                 </div>
                 <div className="h-11 w-11 ">
@@ -277,12 +277,12 @@ const Partidos = () => {
                 <VGCLogo className="pr-12" />
               </a>
             </div>
-            <div className="pt-4 pb-4 pr-2 pl-12 justify-center">
+            <div className="pt-4 pb-4 pr-2 pl-9 justify-center content-center place-content-center">
               <div className="grid grid-cols-3 pr-8 justify-center">
                 <div className="h-11 w-11 content-center">
                   <img src="/9z.png" className="w-full" />
                 </div>
-                <div className="content-center mx-2">
+                <div className="content-center mx-2 pt-3">
                   <p className="text-center text-sm">VS</p>
                 </div>
                 <div className="h-11 w-11 content-center">

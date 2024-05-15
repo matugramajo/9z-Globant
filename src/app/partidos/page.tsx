@@ -7,7 +7,7 @@ import {
   MenuItems,
   Transition,
 } from "@headlessui/react";
-import { TeamIcon, CS2Logo, VGCLogo } from "../9zlogo";
+import { TeamIcon } from "../9zlogo";
 
 const Partidos = () => {
   return (
@@ -136,179 +136,110 @@ const Partidos = () => {
         ></div>
       </header>
       <main className="bg-[#000000] text-white">
-        <div
-          style={{ borderTop: "1px solid #374151" }}
-          className="mb:pt-14 pt-8"
-        ></div>
-        {/* desktop view */}
-        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700 hidden md:block md:text-center">
-          <p className="text-lg font-semibold  text-white text-center">
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
             16 de Mayo 2024
           </p>
-
-          <div className="grid grid-cols-7 items-center hover:bg-gray-700">
-            {/* Logo torneo */}
-            <div className="col-start-3 col-end-4 justify-self-end">
-              <a href="/cs2main" className="block sm:flex pt-7">
-                <CS2Logo />
-              </a>
-            </div>
-            {/* Equipos */}
-            <div className="col-start-4 ">
-              <div className="flex grid-cols-3 justify-center">
-                <div className="grid grid-cols-3 pr-8 pt-4">
-                  <div className="h-20 w-20 ">
-                    <img src="/9z.png" className="w-full" />
-                  </div>
-                  <div className="content-center pl-4">
-                    <p className="text-center">VS</p>
-                  </div>
-                  <div className="h-20 w-20">
-                    <img src="/oddik.png" className="w-full" />
-                  </div>
-                </div>
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+              <div className="basis-1/3  flex justify-center items-center">
+                <img
+                  src="/cslogo.png"
+                  className="h-auto md:w-[80px] w-[60px]"
+                />
               </div>
             </div>
-            {/* Info match */}
-            <div className="col-end-7 col-span-2 justify-self-start text-left">
-              <a href="/cs2main" className="text-base font-normal pt-4">
-                <span className="font-medium  text-white">CS2 Main</span>
+            {/* Contenedor Logos Equipo */}
+            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+              {/* Contendedor 9z logo */}
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/9z.png" className="h-auto w-[120px]" />
+              </div>
+              {/* Contendedor "VS"*/}
+              <div className="basis-1/3 flex justify-center items-center">
+                <p className="text-center">VS</p>
+              </div>
+              {/* Contendedor rival logo */}
+              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                <img src="/oddik.png" className="h-auto w-[100px]" />
+              </div>
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/cs2main" className="text-sm font-medium text-white">
+                CS2 Main
               </a>
-              <div className="text-sm font-normal text-gray-400 ">
-                14:00hs (AR)
-              </div>
-              <div className="text-sm font-normal text-gray-400 ">
-                CBCS Season 4
-              </div>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  14:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="md:text-sm text-xs  font-normal text-gray-400 ">
+                  CBCS Season 4
+                </a>
+              </p>
             </div>
           </div>
         </div>
-        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700 hidden md:block md:text-center">
-          <p className="text-lg font-semibold  text-white text-center">
+        {/* Match 2*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
             18 de Mayo 2024
           </p>
-
-          <div className="grid grid-cols-7 items-center hover:bg-gray-700">
-            {/* Logo torneo */}
-            <div className="col-start-3 col-end-4 justify-self-end pr-11">
-              <a href="/valogc" className="items-center block p-3 sm:flex">
-                <VGCLogo className="pr-12" />
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/vgc.png" className="h-auto md:w-[80px] w-[40px]" />
+              </div>
+            </div>
+            {/* Contenedor Logos Equipo */}
+            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+              {/* Contendedor 9z logo */}
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/9z.png" className="h-auto w-[120px]" />
+              </div>
+              {/* Contendedor "VS"*/}
+              <div className="basis-1/3 flex justify-center items-center">
+                <p className="text-center">VS</p>
+              </div>
+              {/* Contendedor rival logo */}
+              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                <img src="/UniversityWar.png" className="h-auto w-[100px]" />
+              </div>
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/valogc" className="text-sm font-medium text-white">
+                Valorant GC
               </a>
-            </div>
-            {/* Logos */}
-            <div className="col-start-4 ">
-              <div className="flex grid-cols-3 justify-center">
-                <div className="grid grid-cols-3 pr-8 pt-4">
-                  <div className="h-20 w-20 ">
-                    <img src="/9z.png" className="w-full" />
-                  </div>
-                  <div className="content-center pl-4">
-                    <p className="text-center">VS</p>
-                  </div>
-                  <div className="h-20 w-20">
-                    <img src="/UniversityWar.png" className="w-full" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Info match */}
-            <div className="col-end-7 col-span-2 justify-self-start text-left">
-              <a href="/cs2main" className="text-base font-normal pt-4">
-                <span className="font-medium  text-white">Valorant GC</span>
-              </a>
-              <div className="text-sm font-normal text-gray-400 ">
-                19:00hs (AR)
-              </div>
-              <div className="text-sm font-normal text-gray-400 ">
-                Game Changers 2024 LATAM South: Opening
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* mobile view */}
-        <div className="p-3 mb-8 border rounded-lg  bg-[#000000] border-gray-700 md:hidden justify-center">
-          <p className="text-lg font-semibold  text-white text-center">
-            16 de Mayo 2024
-          </p>
-          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
-            <div>
-              <a href="/cs2main" className="items-center block p-3 sm:flex">
-                <CS2Logo />
-              </a>
-            </div>
-            <div className="pt-6">
-              <div className="grid grid-cols-3 pr-8">
-                <div className="h-11 w-11 ">
-                  <img src="/9z.png" className="w-full" />
-                </div>
-                <div className="content-center pt-2">
-                  <p className="text-center text-sm">VS</p>
-                </div>
-                <div className="h-11 w-11 ">
-                  <img src="/oddik.png" className="w-full" />
-                </div>
-              </div>
-            </div>
-            <div className="pt-6 text-left">
-              <div className="text-gray-400">
-                <div className="text-xs font-normal">
-                  <a href="/cs2main">
-                    <span className="font-medium  text-white">CS2 Main</span>
-                  </a>
-                </div>
-                <div className="text-xs font-normal">14:00hs (AR)</div>
-                <div className="text-xs font-normal">CBCS Season 4</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-3 border rounded-lg  bg-[#000000] border-gray-700 md:hidden justify-center">
-          <p className="text-lg font-semibold  text-white text-center">
-            18 de Mayo 2024
-          </p>
-          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
-            <div>
-              <a
-                href="/cs2main"
-                className="items-center block p-3 pl-7 pt-6 sm:flex"
-              >
-                <VGCLogo className="pr-12" />
-              </a>
-            </div>
-            <div className="pt-4 pb-4 pr-2 pl-9 justify-center content-center place-content-center">
-              <div className="grid grid-cols-3 pr-8 justify-center">
-                <div className="h-11 w-11 content-center">
-                  <img src="/9z.png" className="w-full" />
-                </div>
-                <div className="content-center mx-2 pt-3">
-                  <p className="text-center text-sm">VS</p>
-                </div>
-                <div className="h-11 w-11 content-center">
-                  <img src="/UniversityWar.png" className="w-full" />
-                </div>
-              </div>
-            </div>
-            <div className="pt-4 pb-4 text-left">
-              <div className="text-gray-400">
-                <div className="text-xs font-normal">
-                  <a href="/cs2main">
-                    <span className="font-medium  text-white">Valorant GC</span>
-                  </a>
-                </div>
-                <div className="text-xs font-normal">19:00hs (AR)</div>
-                <div className="text-xs font-normal">
-                  <p>Game Changers</p>
-                </div>
-              </div>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  19:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                  Game Changers 2024 LATAM South: Opening
+                </a>
+                <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                  Game Changers
+                </a>
+              </p>
             </div>
           </div>
         </div>
 
         <div
           style={{ borderBottom: "2px solid #a3e635" }}
-          className="mb:pt-14 pt-8"
+          className="mb:pt-14"
         ></div>
       </main>
 
@@ -322,7 +253,7 @@ const Partidos = () => {
           <div className="flex justify-center">
             <a
               href="https://twitter.com/9zTeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4 pl-4 md:pl-0"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-4 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -336,7 +267,7 @@ const Partidos = () => {
             </a>
             <a
               href="https://www.instagram.com/9zteam/?hl=es"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-4 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -350,7 +281,7 @@ const Partidos = () => {
             </a>
             <a
               href="https://www.youtube.com/channel/UCVvzv-yYEnPAYITBfjCriYg"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-7 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -375,7 +306,7 @@ const Partidos = () => {
             </a>
             <a
               href="https://discord.gg/wdJhqM6D"
-              className="[&>svg]:h-9 [&>svg]:w-9"
+              className="[&>svg]:h-11 [&>svg]:w-9 pt-0.5 hover:text-violet-600"
               target="_blank"
             >
               <svg

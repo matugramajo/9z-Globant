@@ -236,7 +236,7 @@ const Equipos = () => {
           <div className="flex justify-center">
             <a
               href="https://twitter.com/9zTeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4 pl-4 md:pl-0"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-4 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -250,7 +250,7 @@ const Equipos = () => {
             </a>
             <a
               href="https://www.instagram.com/9zteam/?hl=es"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-4 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -264,7 +264,7 @@ const Equipos = () => {
             </a>
             <a
               href="https://www.youtube.com/channel/UCVvzv-yYEnPAYITBfjCriYg"
-              className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+              className="me-6 [&>svg]:h-6 [&>svg]:w-7 hover:text-violet-600"
               target="_blank"
             >
               <svg
@@ -289,7 +289,7 @@ const Equipos = () => {
             </a>
             <a
               href="https://discord.gg/wdJhqM6D"
-              className="[&>svg]:h-9 [&>svg]:w-9"
+              className="[&>svg]:h-11 [&>svg]:w-9 pt-0.5 hover:text-violet-600"
               target="_blank"
             >
               <svg

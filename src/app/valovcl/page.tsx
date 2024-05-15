@@ -288,7 +288,7 @@ const Equipos = () => {
       <footer className="text-center text-surface/75 bg-[#000000] text-white/75 lg:text-left">
         <div className="flex items-center justify-center px-6 pt-6 lg:justify-between">
           <div className="font-sans text-xl font-semibold tracking-wide">
-            <span>#TODOVIOLETA</span>
+            <span>#TodoVioleta</span>
           </div>
         </div>
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 border-white/10 lg:justify-between">

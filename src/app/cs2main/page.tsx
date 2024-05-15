@@ -12,30 +12,42 @@ import { TeamIcon } from "../9zlogo";
 const Equipos = () => {
   return (
     <>
-      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide z-10">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0 z-10">
         <nav className="ml-auto gap-6 hidden md:flex">
-          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <Link href="/noticias" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3 ">
+            <Link
+              href="/noticias"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               NOTICIAS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <Link href="/equipos" className="text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3 ">
+            <Link href="/equipos" className="text-violet-600 scale-110">
               EQUIPOS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <a className="text-2xl font-bold hover:text-lime-400 ms-5" href="/">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <a
+              className="text-2xl font-bold transition duration-200 group-hover:scale-110 ms-5"
+              href="/"
+            >
               <TeamIcon />
             </a>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <Link href="/partidos" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <Link
+              href="/partidos"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               PARTIDOS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <Link href="/historia" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <Link
+              href="/historia"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               HISTORIA
             </Link>
           </div>
@@ -43,7 +55,7 @@ const Equipos = () => {
         <nav className="text-lg flex md:hidden justify-between px-4">
           <div className="w-10"></div>
           <div className="flex ">
-            <a className="hover:text-lime-400" href="/">
+            <a className="hover:text-violet-600" href="/">
               <TeamIcon />
             </a>
           </div>
@@ -115,7 +127,10 @@ const Equipos = () => {
             </Menu>
           </div>
         </nav>
-        <div style={{ borderBottom: "2px solid #a3e635" }}></div>
+        <div
+          style={{ borderBottom: "2px solid #a3e635" }}
+          className="pt-3"
+        ></div>
       </header>
       <main className="bg-[#121212] text-white">
         <div className="container py-14 mx-auto px-6">
@@ -355,12 +370,12 @@ const Equipos = () => {
               <h6 className="mb-4 flex font-semibold uppercase md:justify-start">
                 LINKS OFICIALES
               </h6>
-              <p className="mb-4 hover:text-lime-400">
+              <p className="mb-4 hover:text-violet-600">
                 <a href="https://shop.9z.gg" target="_blank">
                   Tienda
                 </a>
               </p>
-              <p className="mb-4 hover:text-lime-400">
+              <p className="mb-4 hover:text-violet-600">
                 <a href="https://9z.gg/inicio" target="_blank">
                   Página oficial
                 </a>
@@ -373,7 +388,7 @@ const Equipos = () => {
           <a
             href="https://linktr.ee/matildegramajo"
             target="_blank"
-            className="hover:text-lime-400"
+            className="hover:text-violet-600"
           >
             ♡ Matilde Gramajo Dev
           </a>

@@ -7,35 +7,47 @@ import {
   MenuItems,
   Transition,
 } from "@headlessui/react";
-import { TeamIcon } from "../9zlogo";
+import { TeamIcon, CS2Logo, VGCLogo } from "../9zlogo";
 
 const Partidos = () => {
   return (
     <>
-      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide z-10">
+      <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0 z-10">
         <nav className="ml-auto gap-6 hidden md:flex">
-          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <Link href="/noticias" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3 ">
+            <Link
+              href="/noticias"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               NOTICIAS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3 ">
-            <Link href="/equipos" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3 ">
+            <Link
+              href="/equipos"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               EQUIPOS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <a className="text-2xl font-bold hover:text-lime-400 ms-5" href="/">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <a
+              className="text-2xl font-bold transition duration-200 group-hover:scale-110 ms-5"
+              href="/"
+            >
               <TeamIcon />
             </a>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <Link href="/partidos" className="text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <Link href="/partidos" className="text-violet-600 scale-110">
               PARTIDOS
             </Link>
           </div>
-          <div className="flex items-center justify-center space-x-8 basis-1/3">
-            <Link href="/historia" className="hover:text-lime-400">
+          <div className="flex group items-center justify-center space-x-8 basis-1/3">
+            <Link
+              href="/historia"
+              className="hover:text-violet-600 transition duration-200 group-hover:scale-110"
+            >
               HISTORIA
             </Link>
           </div>
@@ -43,7 +55,7 @@ const Partidos = () => {
         <nav className="text-lg flex md:hidden justify-between px-4">
           <div className="w-10"></div>
           <div className="flex ">
-            <a className="hover:text-lime-400" href="/">
+            <a className="hover:text-violet-600" href="/">
               <TeamIcon />
             </a>
           </div>
@@ -115,16 +127,102 @@ const Partidos = () => {
             </Menu>
           </div>
         </nav>
-        <div style={{ borderBottom: "2px solid #a3e635" }}></div>
+        <div
+          style={{ borderBottom: "2px solid #a3e635" }}
+          className="pt-3"
+        ></div>
       </header>
-      <main className="bg-[#121212] text-white">
-        <div style={{ borderBottom: "2px solid #a3e635" }}></div>
+      <main className="bg-[#000000] text-white">
+        <div style={{ borderTop: "1px solid #374151" }} className="pt-14"></div>
+        <div className="px-5 pt-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700">
+          <p className="text-lg font-semibold  text-white text-center">
+            16 de Mayo 2024
+          </p>
+          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
+            <div>
+              <a href="/cs2main" className="items-center block p-3 sm:flex">
+                <CS2Logo />
+              </a>
+            </div>
+            <div className="pt-4">
+              <div className="grid grid-cols-3 pr-8">
+                <div className="h-20 w-20 ">
+                  <img src="/9z.png" className="w-full" />
+                </div>
+                <div className="content-center">
+                  <p className="text-center">VS</p>
+                </div>
+                <div className="h-20 w-20 ">
+                  <img src="/oddik.png" className="w-full" />
+                </div>
+              </div>
+            </div>
+            <div className="pt-4">
+              <div className="text-gray-400">
+                <div className="text-base font-normal">
+                  <a href="/cs2main">
+                    <span className="font-medium  text-white">CS2 Main</span>
+                  </a>
+                </div>
+                <div className="text-sm font-normal">14:00hs (AR)</div>
+                <div className="text-sm font-normal">CBCS Season 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700">
+          <p className="text-lg font-semibold  text-white text-center">
+            18 de Mayo 2024
+          </p>
+
+          <div className="grid grid-cols-7 items-center hover:bg-gray-700">
+            {/* Logo torneo */}
+            <div className="col-start-3 col-end-4 justify-self-end pr-11">
+              <a href="/valogc" className="items-center block p-3 sm:flex">
+                <VGCLogo className="pr-12" />
+              </a>
+            </div>
+            {/* Logos */}
+            <div className="col-start-4 ">
+              <div className="flex grid-cols-3 justify-center">
+                <div className="grid grid-cols-3 pr-8 pt-4">
+                  <div className="h-20 w-20 ">
+                    <img src="/9z.png" className="w-full" />
+                  </div>
+                  <div className="content-center">
+                    <p className="text-center">VS</p>
+                  </div>
+                  <div className="h-20 w-20 ">
+                    <img src="/UniversityWar.png" className="w-full" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Info match */}
+            <div className="col-end-7 col-span-2">
+              <a href="/cs2main" className="text-base font-normal pt-4">
+                <span className="font-medium  text-white">Valorant GC</span>
+              </a>
+              <div className="text-sm font-normal text-gray-400 ">
+                19:00hs (AR)
+              </div>
+              <div className="text-sm font-normal text-gray-400 ">
+                Game Changers 2024 LATAM South: Opening
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{ borderBottom: "2px solid #a3e635" }}
+          className="pt-14"
+        ></div>
       </main>
 
       <footer className="text-center text-surface/75 bg-[#000000] text-white/75 lg:text-left">
         <div className="flex items-center justify-center px-6 pt-6 lg:justify-between">
           <div className="font-sans text-xl font-semibold tracking-wide">
-            <span>#TODOVIOLETA</span>
+            <span>#TodoVioleta</span>
           </div>
         </div>
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 border-white/10 lg:justify-between">
@@ -203,12 +301,12 @@ const Partidos = () => {
               <h6 className="mb-4 flex font-semibold uppercase md:justify-start">
                 LINKS OFICIALES
               </h6>
-              <p className="mb-4 hover:text-lime-400">
+              <p className="mb-4 hover:text-violet-600">
                 <a href="https://shop.9z.gg" target="_blank">
                   Tienda
                 </a>
               </p>
-              <p className="mb-4 hover:text-lime-400">
+              <p className="mb-4 hover:text-violet-600">
                 <a href="https://9z.gg/inicio" target="_blank">
                   Página oficial
                 </a>
@@ -221,7 +319,7 @@ const Partidos = () => {
           <a
             href="https://linktr.ee/matildegramajo"
             target="_blank"
-            className="hover:text-lime-400"
+            className="hover:text-violet-600"
           >
             ♡ Matilde Gramajo Dev
           </a>

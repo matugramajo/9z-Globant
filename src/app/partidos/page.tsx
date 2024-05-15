@@ -55,7 +55,10 @@ const Partidos = () => {
         <nav className="text-lg flex md:hidden justify-between px-4">
           <div className="w-10"></div>
           <div className="flex ">
-            <a className="hover:text-violet-600" href="/">
+            <a
+              className="transition duration-200 group-hover:scale-110"
+              href="/"
+            >
               <TeamIcon />
             </a>
           </div>
@@ -133,45 +136,54 @@ const Partidos = () => {
         ></div>
       </header>
       <main className="bg-[#000000] text-white">
-        <div style={{ borderTop: "1px solid #374151" }} className="pt-14"></div>
-        <div className="px-5 pt-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700">
+        <div
+          style={{ borderTop: "1px solid #374151" }}
+          className="mb:pt-14 pt-8"
+        ></div>
+        {/* desktop view */}
+        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700 hidden md:block md:text-center">
           <p className="text-lg font-semibold  text-white text-center">
             16 de Mayo 2024
           </p>
-          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
-            <div>
-              <a href="/cs2main" className="items-center block p-3 sm:flex">
+
+          <div className="grid grid-cols-7 items-center hover:bg-gray-700">
+            {/* Logo torneo */}
+            <div className="col-start-3 col-end-4 justify-self-end">
+              <a href="/cs2main" className="block sm:flex pt-7">
                 <CS2Logo />
               </a>
             </div>
-            <div className="pt-4">
-              <div className="grid grid-cols-3 pr-8">
-                <div className="h-20 w-20 ">
-                  <img src="/9z.png" className="w-full" />
-                </div>
-                <div className="content-center">
-                  <p className="text-center">VS</p>
-                </div>
-                <div className="h-20 w-20 ">
-                  <img src="/oddik.png" className="w-full" />
+            {/* Equipos */}
+            <div className="col-start-4 ">
+              <div className="flex grid-cols-3 justify-center">
+                <div className="grid grid-cols-3 pr-8 pt-4">
+                  <div className="h-20 w-20 ">
+                    <img src="/9z.png" className="w-full" />
+                  </div>
+                  <div className="content-center pl-4">
+                    <p className="text-center">VS</p>
+                  </div>
+                  <div className="h-20 w-20">
+                    <img src="/oddik.png" className="w-full" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="pt-4">
-              <div className="text-gray-400">
-                <div className="text-base font-normal">
-                  <a href="/cs2main">
-                    <span className="font-medium  text-white">CS2 Main</span>
-                  </a>
-                </div>
-                <div className="text-sm font-normal">14:00hs (AR)</div>
-                <div className="text-sm font-normal">CBCS Season 4</div>
+            {/* Info match */}
+            <div className="col-end-7 col-span-2 justify-self-start text-left">
+              <a href="/cs2main" className="text-base font-normal pt-4">
+                <span className="font-medium  text-white">CS2 Main</span>
+              </a>
+              <div className="text-sm font-normal text-gray-400 ">
+                14:00hs (AR)
+              </div>
+              <div className="text-sm font-normal text-gray-400 ">
+                CBCS Season 4
               </div>
             </div>
           </div>
         </div>
-
-        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700">
+        <div className="p-5 mb-4 border rounded-lg  bg-[#000000] border-gray-700 hidden md:block md:text-center">
           <p className="text-lg font-semibold  text-white text-center">
             18 de Mayo 2024
           </p>
@@ -190,17 +202,17 @@ const Partidos = () => {
                   <div className="h-20 w-20 ">
                     <img src="/9z.png" className="w-full" />
                   </div>
-                  <div className="content-center">
+                  <div className="content-center pl-4">
                     <p className="text-center">VS</p>
                   </div>
-                  <div className="h-20 w-20 ">
+                  <div className="h-20 w-20">
                     <img src="/UniversityWar.png" className="w-full" />
                   </div>
                 </div>
               </div>
             </div>
             {/* Info match */}
-            <div className="col-end-7 col-span-2">
+            <div className="col-end-7 col-span-2 justify-self-start text-left">
               <a href="/cs2main" className="text-base font-normal pt-4">
                 <span className="font-medium  text-white">Valorant GC</span>
               </a>
@@ -213,9 +225,90 @@ const Partidos = () => {
             </div>
           </div>
         </div>
+
+        {/* mobile view */}
+        <div className="p-3 mb-8 border rounded-lg  bg-[#000000] border-gray-700 md:hidden justify-center">
+          <p className="text-lg font-semibold  text-white text-center">
+            16 de Mayo 2024
+          </p>
+          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
+            <div>
+              <a href="/cs2main" className="items-center block p-3 sm:flex">
+                <CS2Logo />
+              </a>
+            </div>
+            <div className="pt-6">
+              <div className="grid grid-cols-3 pr-8">
+                <div className="h-11 w-11 ">
+                  <img src="/9z.png" className="w-full" />
+                </div>
+                <div className="content-center">
+                  <p className="text-center text-sm">VS</p>
+                </div>
+                <div className="h-11 w-11 ">
+                  <img src="/oddik.png" className="w-full" />
+                </div>
+              </div>
+            </div>
+            <div className="pt-6 text-left">
+              <div className="text-gray-400">
+                <div className="text-xs font-normal">
+                  <a href="/cs2main">
+                    <span className="font-medium  text-white">CS2 Main</span>
+                  </a>
+                </div>
+                <div className="text-xs font-normal">14:00hs (AR)</div>
+                <div className="text-xs font-normal">CBCS Season 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-3 border rounded-lg  bg-[#000000] border-gray-700 md:hidden justify-center">
+          <p className="text-lg font-semibold  text-white text-center">
+            18 de Mayo 2024
+          </p>
+          <div className="flex hover:bg-gray-700 grid-cols-3 justify-center">
+            <div>
+              <a
+                href="/cs2main"
+                className="items-center block p-3 pl-7 pt-6 sm:flex"
+              >
+                <VGCLogo className="pr-12" />
+              </a>
+            </div>
+            <div className="pt-4 pb-4 pr-2 pl-12 justify-center">
+              <div className="grid grid-cols-3 pr-8 justify-center">
+                <div className="h-11 w-11 content-center">
+                  <img src="/9z.png" className="w-full" />
+                </div>
+                <div className="content-center mx-2">
+                  <p className="text-center text-sm">VS</p>
+                </div>
+                <div className="h-11 w-11 content-center">
+                  <img src="/UniversityWar.png" className="w-full" />
+                </div>
+              </div>
+            </div>
+            <div className="pt-4 pb-4 text-left">
+              <div className="text-gray-400">
+                <div className="text-xs font-normal">
+                  <a href="/cs2main">
+                    <span className="font-medium  text-white">Valorant GC</span>
+                  </a>
+                </div>
+                <div className="text-xs font-normal">19:00hs (AR)</div>
+                <div className="text-xs font-normal">
+                  <p>Game Changers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div
           style={{ borderBottom: "2px solid #a3e635" }}
-          className="pt-14"
+          className="mb:pt-14 pt-8"
         ></div>
       </main>
 

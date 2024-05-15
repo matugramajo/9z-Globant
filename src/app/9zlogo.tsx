@@ -21,7 +21,7 @@ export function TeamIcon(props: React.HTMLAttributes<SVGElement>) {
 export function CS2Logo(props: React.HTMLAttributes<SVGElement>) {
   return (
     <svg
-      className="size-[30px] md:size-[100px]"
+      className="size-[80px] md:size-[100px]"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 799.000000 669.000000"
       preserveAspectRatio="xMidYMid meet"

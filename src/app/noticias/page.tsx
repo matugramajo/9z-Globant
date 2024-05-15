@@ -55,7 +55,10 @@ const Noticias = () => {
         <nav className="text-lg flex md:hidden justify-between px-4">
           <div className="w-10"></div>
           <div className="flex ">
-            <a className="hover:text-violet-600" href="/">
+            <a
+              className="transition duration-200 group-hover:scale-110"
+              href="/"
+            >
               <TeamIcon />
             </a>
           </div>

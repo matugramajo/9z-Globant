@@ -260,7 +260,49 @@ const Partidos = () => {
             </div>
           </div>
         </div>
+
         {/* Dia 3*/}
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
+            19 de Mayo 2024
+          </p>
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex basis-1/3 md:justify-end justify-center items-center">
+              <div className="flex justify-center items-center">
+                <img src="/stdm.png" className="w-auto md:h-[150px] h-[80px]" />
+              </div>
+            </div>
+            {/* Contendedor 9z logo */}
+            <div className="basis-1/3  flex justify-center items-center">
+              <img src="/9z.png" className="h-auto md:w-[120px] w-[100px]" />
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/sim" className="text-sm font-medium text-white">
+                Sim Racing
+              </a>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  15:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                  Super Turismo de Marcas: Final
+                </a>
+                <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                  Super Turismo de Marcas
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dia 4*/}
         {/* Match 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}
@@ -312,7 +354,7 @@ const Partidos = () => {
           </div>
         </div>
 
-        {/* Dia 4*/}
+        {/* Dia 5*/}
         {/* Match 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}

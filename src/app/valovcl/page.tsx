@@ -1,19 +1,64 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
-} from "@headlessui/react";
-import { TeamIcon } from "../9zlogo";
+
+import { TeamIcon, MenuNav, Close } from "../9zlogo";
+
+const Nav = () => {
+  let Links = [
+    { name: "Noticias", link: "/noticias" },
+    { name: "Equipos", link: "/equipos" },
+    { name: "Partidos", link: "/partidos" },
+    { name: "Historia", link: "/historia" },
+  ];
+
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="grid grid-cols-5 justify-items-center">
+      <div className=""></div>
+      <div className=""></div>
+      <div className="">
+        <a className="transition duration-200 group-hover:scale-110" href="/">
+          <TeamIcon />
+        </a>
+      </div>
+      <div
+        onClick={() => setOpen(!open)}
+        className="text-3xl absolute right-8 top-6 cursor-pointer"
+      >
+        {open ? <Close /> : <MenuNav />}{" "}
+      </div>
+      <ul
+        className={`absolute left-0 bg-[#000000] w-full transition-all ease-in-out duration-300 mt-3 flex flex-col items-center gap-2 py-2 ${
+          open ? "top-20" : "top-[-490px]"
+        }`}
+      >
+        {Links.map((link) => (
+          <li key={link.name} className="text-lg">
+            <a
+              href={link.link}
+              className={`hover:text-gray-400 font-sans duration-500 ${
+                link.name == "Equipos" ? "text-purple-600" : "text-white"
+              }`}
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 const Equipos = () => {
   return (
     <>
       <header className="bg-[#000000] text-white font-mono text-xl tracking-wide sticky top-0 z-10">
-        <nav className="ml-auto gap-6 hidden md:flex">
+        <nav
+          className="ml-auto gap-6 hidden md:flex"
+          style={{ borderBottom: "2px solid #a3e635" }}
+        >
           <div className="flex group items-center justify-center space-x-8 basis-1/3 ">
             <Link
               href="/noticias"
@@ -52,88 +97,12 @@ const Equipos = () => {
             </Link>
           </div>
         </nav>
-        <nav className="text-lg flex md:hidden justify-between px-4">
-          <div className="w-10"></div>
-          <div className="flex ">
-            <a
-              className="transition duration-200 group-hover:scale-110"
-              href="/"
-            >
-              <TeamIcon />
-            </a>
-          </div>
-          <div className="flex items-center">
-            <Menu>
-              <MenuButton>
-                <svg
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
-              </MenuButton>
-              <Transition
-                enter="transition ease-out duration-75"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
-                leave="transition ease-in duration-100"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
-              >
-                <MenuItems
-                  anchor="bottom end"
-                  className="[--anchor-gap:38px] w-52 origin-top-right rounded-xl border border-white/5 bg-black/75 p-1 text-white focus:outline-none flex flex-col items-center"
-                >
-                  <MenuItem>
-                    <a
-                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
-                      href="/noticias"
-                    >
-                      Noticias
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
-                      href="/equipos"
-                    >
-                      Equipos
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
-                      href="/partidos"
-                    >
-                      Partidos
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      className="block data-[focus]:bg-blue-100 py-2 px-4 w-full text-center"
-                      href="/historia"
-                    >
-                      Historia
-                    </a>
-                  </MenuItem>
-                </MenuItems>
-              </Transition>
-            </Menu>
-          </div>
-        </nav>
-        <div
+        <nav
+          className="flex md:hidden z-[-1]"
           style={{ borderBottom: "2px solid #a3e635" }}
-          className="pt-3"
-        ></div>
+        >
+          <Nav />
+        </nav>
       </header>
       <main className="bg-[#121212] text-white">
         <div className="container py-14 mx-auto px-6">

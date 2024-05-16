@@ -105,58 +105,111 @@ const Partidos = () => {
         </nav>
       </header>
       <main className="bg-[#000000] text-white">
-        {/* Match 1*/}
         <div className="pt-14"></div>
+        {/* Dia 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 py-5">
-          {/* Contenedor fecha */}
-          <p className="md:text-lg text-sm font-semibold  text-white text-center">
-            16 de Mayo 2024
-          </p>
-          {/* Contenedor Match */}
-          <div className="flex flex-row pt-5 px-1">
-            {/* Contenedor juego */}
-            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
-              <div className="basis-1/3  flex justify-center items-center">
-                <img
-                  src="/cslogo.png"
-                  className="h-auto md:w-[80px] w-[60px]"
-                />
+          {/* Match 1*/}
+          <div className="pb-5">
+            {/* Contenedor fecha */}
+            <p className="md:text-lg text-sm font-semibold  text-white text-center">
+              16 de Mayo 2024
+            </p>
+            {/* Contenedor Match */}
+            <div className="flex flex-row pt-5 px-1">
+              {/* Contenedor juego */}
+              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img
+                    src="/cslogo.png"
+                    className="h-auto md:w-[80px] w-[60px]"
+                  />
+                </div>
+              </div>
+              {/* Contenedor Logos Equipo */}
+              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+                {/* Contendedor 9z logo */}
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img src="/9z.png" className="h-auto w-[120px]" />
+                </div>
+                {/* Contendedor "VS"*/}
+                <div className="basis-1/3 flex justify-center items-center">
+                  <p className="text-center">VS</p>
+                </div>
+                {/* Contendedor rival logo */}
+                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                  <img src="/imp.png" className="h-auto w-[100px]" />
+                </div>
+              </div>
+              {/* Contenedor info Match */}
+              <div className="basis-1/3 flex flex-col justify-center pl-3">
+                <a href="/cs2main" className="text-sm font-medium text-white">
+                  CS2 Main
+                </a>
+                <p>
+                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                    15:00hs (AR)
+                  </a>
+                </p>
+                <p>
+                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                    Thunderpick World Championship 2024 SA Closed Qualifier 1
+                  </a>
+                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                    Thunderpick Championship
+                  </a>
+                </p>
               </div>
             </div>
-            {/* Contenedor Logos Equipo */}
-            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
-              {/* Contendedor 9z logo */}
-              <div className="basis-1/3  flex justify-center items-center">
-                <img src="/9z.png" className="h-auto w-[120px]" />
+          </div>
+          {/* Match 2*/}
+          <div className="border rounded-lg bg-[#000000] border-gray-700 pb-5">
+            {/* Contenedor Match */}
+            <div className="flex flex-row pt-5 px-1">
+              {/* Contenedor juego */}
+              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img
+                    src="/cslogo.png"
+                    className="h-auto md:w-[80px] w-[60px]"
+                  />
+                </div>
               </div>
-              {/* Contendedor "VS"*/}
-              <div className="basis-1/3 flex justify-center items-center">
-                <p className="text-center">VS</p>
+              {/* Contenedor Logos Equipo */}
+              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+                {/* Contendedor 9z logo */}
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img src="/9z.png" className="h-auto w-[120px]" />
+                </div>
+                {/* Contendedor "VS"*/}
+                <div className="basis-1/3 flex justify-center items-center">
+                  <p className="text-center">VS</p>
+                </div>
+                {/* Contendedor rival logo */}
+                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                  <img src="/oddik.png" className="h-auto w-[100px]" />
+                </div>
               </div>
-              {/* Contendedor rival logo */}
-              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                <img src="/oddik.png" className="h-auto w-[100px]" />
-              </div>
-            </div>
-            {/* Contenedor info Match */}
-            <div className="basis-1/3 flex flex-col justify-center pl-3">
-              <a href="/cs2main" className="text-sm font-medium text-white">
-                CS2 Main
-              </a>
-              <p>
-                <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                  14:00hs (AR)
+              {/* Contenedor info Match */}
+              <div className="basis-1/3 flex flex-col justify-center pl-3">
+                <a href="/cs2main" className="text-sm font-medium text-white">
+                  CS2 Main
                 </a>
-              </p>
-              <p>
-                <a className="md:text-sm text-xs  font-normal text-gray-400 ">
-                  CBCS Season 4
-                </a>
-              </p>
+                <p>
+                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                    18:00hs (AR)
+                  </a>
+                </p>
+                <p>
+                  <a className="md:text-sm text-xs  font-normal text-gray-400 ">
+                    CBCS Season 4
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        {/* Match 2*/}
+        {/* Dia 2*/}
+        {/* Match 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}
           <p className="md:text-lg text-sm font-semibold  text-white text-center">
@@ -201,6 +254,109 @@ const Partidos = () => {
                 </a>
                 <a className="md:hidden text-xs  font-normal text-gray-400 ">
                   Game Changers
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Dia 3*/}
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
+            28 de Mayo 2024
+          </p>
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/vgc.png" className="h-auto md:w-[80px] w-[40px]" />
+              </div>
+            </div>
+            {/* Contenedor Logos Equipo */}
+            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+              {/* Contendedor 9z logo */}
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/9z.png" className="h-auto w-[120px]" />
+              </div>
+              {/* Contendedor "VS"*/}
+              <div className="basis-1/3 flex justify-center items-center">
+                <p className="text-center">VS</p>
+              </div>
+              {/* Contendedor rival logo */}
+              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                <img src="/furious.png" className="h-auto w-[100px]" />
+              </div>
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/valovcl" className="text-sm font-medium text-white">
+                Valorant VCL
+              </a>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  19:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                  Challengers Latam S-Semana 2
+                </a>
+                <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                  Challengers Latam
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dia 4*/}
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
+            4 de Junio 2024
+          </p>
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/vgc.png" className="h-auto md:w-[80px] w-[40px]" />
+              </div>
+            </div>
+            {/* Contenedor Logos Equipo */}
+            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+              {/* Contendedor 9z logo */}
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/9z.png" className="h-auto w-[120px]" />
+              </div>
+              {/* Contendedor "VS"*/}
+              <div className="basis-1/3 flex justify-center items-center">
+                <p className="text-center">VS</p>
+              </div>
+              {/* Contendedor rival logo */}
+              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                <img src="/miedo.png" className="h-auto w-[100px]" />
+              </div>
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/valovcl" className="text-sm font-medium text-white">
+                Valorant VCL
+              </a>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  17:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                  Challengers Latam S-Semana 3
+                </a>
+                <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                  Challengers Latam
                 </a>
               </p>
             </div>

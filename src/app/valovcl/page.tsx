@@ -261,7 +261,7 @@ const Equipos = () => {
           </div>
         </div>
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 border-white/10 lg:justify-between">
-          <div className="flex justify-center">
+          <div className="flex justify-center pl-4 md:pl-0">
             <a
               href="https://twitter.com/9zTeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
               className="me-6 [&>svg]:h-6 [&>svg]:w-4 hover:text-violet-600"

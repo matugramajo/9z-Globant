@@ -250,7 +250,7 @@ const Equipos = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h5 className="mb-2 text-lg font-bold">lezy (Stand In)</h5>
+                    <h5 className="mb-2 text-lg font-bold">lezy</h5>
                     <h6 className="mb-4 font-medium text-primary-400">
                       Lucas Motta
                     </h6>

@@ -119,7 +119,7 @@ const Noticias = () => {
 
               <div>
                 <h3 className="mb-3 text-2xl font-bold">
-                  ¡DOS AÑOS DE NUESTRO DEBUT EN EL MAJOR!
+                  ¡Dos Años De Nuestro Debut En El Major!
                 </h3>
                 <div className="mb-3 flex items-center justify-center text-sm font-medium text-danger-500 md:justify-start">
                   <img
@@ -134,11 +134,11 @@ const Noticias = () => {
                   <small>09.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  Hoy es un día más que especial para nosotros. Además del
-                  aniversario de 5 años de DGT, hoy se cumplen 2 años desde
-                  nuestro debut en el #PGLMajor de Amberes, día en el que
-                  quedamos inmortalizados para toda la historia del Counter
-                  Strike mundial.
+                  Hoy es un día verdaderamente especial para nosotros. No solo
+                  celebramos el quinto aniversario de DGT, sino que también
+                  conmemoramos dos años desde nuestro debut en el #PGLMajor de
+                  Amberes, día en el que quedamos inmortalizados para toda la
+                  historia del Counter Strike mundial.
                 </p>
               </div>
             </div>
@@ -174,11 +174,12 @@ const Noticias = () => {
                   <small>07.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  Sigue la acción del Main de CS2 en Mayo. Este mísmo Sábado
-                  comienza la primera qualy de SA a la Thunderpick World
-                  Championship 2024. 16 equipos se enfrentarán en un bracket de
-                  eliminación directa a BO3. El ganador será el primer
-                  clasificado de SA a la #ThunderpickWC 2024.
+                  ¡Emoción en el mundo de CS2 este mayo! Este sábado, arranca la
+                  primera clasificatoria de Sudamérica para el Thunderpick World
+                  Championship 2024. Dieciséis equipos competirán en una feroz
+                  batalla de eliminación directa al mejor de tres. El equipo
+                  ganador se asegurará el primer puesto para representar a
+                  Sudamérica en la #ThunderpickWC 2024. ¡No te lo pierdas!
                 </p>
               </div>
             </div>
@@ -207,10 +208,11 @@ const Noticias = () => {
                   <small>07.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  Nuestro corredor de Simracing logró el primer puesto con
-                  amplia diferencia en la etapa regular del Super turismo de
-                  Marcas y clasificó a la gran final presencial que se jugará el
-                  19 de mayo en Villa Urquiza.
+                  ¡Éxito en el Simracing! Nuestro piloto dominó la etapa regular
+                  del Super turismo de Marcas, asegurando el primer puesto con
+                  una amplia ventaja. Ahora, se ha clasificado para la gran
+                  final presencial, que se celebrará el 19 de mayo en Villa
+                  Urquiza. ¡Estamos listos para darlo todo en la pista!
                 </p>
               </div>
             </div>
@@ -242,10 +244,11 @@ const Noticias = () => {
                   <small>03.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  ¡9zG confirmado en la RES Latam Series #4! La ultima edición
-                  del torneo comienza éste Domingo, en donde 9z integra el Grupo
-                  D junto a: BESTIA, Sharks y VikingsKR. El primer match de la
-                  Violeta será el día Lunes, a las 14:00 hs vs VikingsKR.
+                  ¡9zG listo para la RES Latam Series #4! La última entrega del
+                  torneo arranca este domingo. 9z se une al Grupo D, compitiendo
+                  contra BESTIA, Sharks y VikingsKR. El primer enfrentamiento de
+                  la Violeta será el lunes a las 14:00 hs contra VikingsKR.
+                  ¡Preparados para la batalla!
                 </p>
               </div>
             </div>
@@ -277,11 +280,11 @@ const Noticias = () => {
                   <small>03.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  ¡9zG confirmado en la CBCS #4! El equipo estará participando
-                  en la primera edición del año de CBCS. Integramos el Grupo A
-                  con: Oddik, Galorys, Case, Team Solid, Krü, Intense e
-                  inSanitY. El torneo comienza el 12/5, donde nuestro primer
-                  match será vs Insanity.
+                  ¡9zG se suma a la CBCS #4! El equipo se embarca en la primera
+                  edición del año de la CBCS. Estaremos compitiendo en el Grupo
+                  A junto a Oddik, Galorys, Case, Team Solid, Krü, Intense e
+                  inSanitY. El torneo comienza el 12/5, y nuestro primer
+                  enfrentamiento será contra Insanity.
                 </p>
               </div>
             </div>
@@ -314,11 +317,11 @@ const Noticias = () => {
                   <small>03.05.2024</small>
                 </p>
                 <p className="text-neutral-300">
-                  El día 22 de Mayo comienza el primer split de la PMSL
-                  Americas, la super liga oficial de PUBGM. El torneo será
-                  offline en Brasil contando con 16 equipos participantes: 6 de
-                  Brasil, 6 de LATAM y 4 de NA. Los mejores 4 equipos del torneo
-                  viajarán a los Esports World Cup.
+                  Arranca el primer split de la PMSL Americas el 22 de mayo, la
+                  super liga oficial de PUBGM. El torneo se celebrará en Brasil
+                  de forma presencial, con la participación de 16 equipos: 6 de
+                  Brasil, 6 de LATAM y 4 de NA. Los cuatro mejores equipos del
+                  torneo obtendrán un pase directo a los Esports World Cup.
                 </p>
               </div>
             </div>

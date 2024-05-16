@@ -273,12 +273,12 @@ const Partidos = () => {
             {/* Contenedor juego */}
             <div className="flex basis-1/3 md:justify-end justify-center items-center">
               <div className="flex justify-center items-center">
-                <img src="/stdm.png" className="w-auto md:h-[150px] h-[80px]" />
+                <img src="/stdm.png" className="w-auto md:h-[150px] h-[60px]" />
               </div>
             </div>
             {/* Contendedor 9z logo */}
             <div className="basis-1/3  flex justify-center items-center">
-              <img src="/9z.png" className="h-auto md:w-[120px] w-[100px]" />
+              <img src="/9z.png" className="h-auto md:w-[120px] w-[60px]" />
             </div>
             {/* Contenedor info Match */}
             <div className="basis-1/3 flex flex-col justify-center pl-3">

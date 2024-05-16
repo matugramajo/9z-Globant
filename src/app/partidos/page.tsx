@@ -107,7 +107,8 @@ const Partidos = () => {
       <main className="bg-[#000000] text-white">
         <div className="pt-14"></div>
         {/* Dia 1*/}
-        <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 py-5">
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 pt-5">
           {/* Match 1*/}
           <div className="pb-5">
             {/* Contenedor fecha */}
@@ -162,7 +163,7 @@ const Partidos = () => {
             </div>
           </div>
           {/* Match 2*/}
-          <div className="border rounded-lg bg-[#000000] border-gray-700 pb-5">
+          <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
             {/* Contenedor Match */}
             <div className="flex flex-row pt-5 px-1">
               {/* Contenedor juego */}
@@ -250,7 +251,7 @@ const Partidos = () => {
               </p>
               <p>
                 <a className="hidden md:block text-sm font-normal text-gray-400 ">
-                  Game Changers 2024 LATAM South: Opening
+                  Game Changers 2024 LATAM South
                 </a>
                 <a className="md:hidden text-xs  font-normal text-gray-400 ">
                   Game Changers

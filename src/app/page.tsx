@@ -107,7 +107,7 @@ const Page: React.FC = () => {
           </nav>
         </header>
 
-        <main className="bg-[#000000] text-white pt-6">
+        <main className="bg-[#000000] text-white pt-6 md:pt-0">
           <nav className="ml-auto gap-6 hidden md:flex">
             <div className="flex flex-row pt-10 pb-10">
               <img src="/banner.png" className="object-fill" />

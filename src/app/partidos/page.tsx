@@ -161,6 +161,55 @@ const Partidos = () => {
               </div>
             </div>
           </div>
+          {/* Match 1.2*/}
+          <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
+            {/* Contenedor Match */}
+            <div className="flex flex-row pt-5 px-1">
+              {/* Contenedor juego */}
+              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img
+                    src="/cslogo.png"
+                    className="h-auto md:w-[80px] w-[60px]"
+                  />
+                </div>
+              </div>
+              {/* Contenedor Logos Equipo */}
+              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+                {/* Contendedor 9z logo */}
+                <div className="basis-1/3  flex justify-center items-center">
+                  <img src="/9z.png" className="h-auto w-[120px]" />
+                </div>
+                {/* Contendedor "VS"*/}
+                <div className="basis-1/3 flex justify-center items-center">
+                  <p className="text-center">VS</p>
+                </div>
+                {/* Contendedor rival logo */}
+                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                  <img src="/sensei.png" className="h-auto w-[100px]" />
+                </div>
+              </div>
+              {/* Contenedor info Match */}
+              <div className="basis-1/3 flex flex-col justify-center pl-3">
+                <a href="/cs2ac" className="text-sm font-medium text-white">
+                  CS2 Academy
+                </a>
+                <p>
+                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                    16:00hs (AR)
+                  </a>
+                </p>
+                <p>
+                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                  Gamers Club Liga Serie A
+                  </a>
+                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                  Gamers Club Liga Serie A
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
           {/* Match 2*/}
           <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
             {/* Contenedor Match */}
@@ -519,6 +568,61 @@ const Partidos = () => {
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}
           <p className="md:text-lg text-sm font-semibold  text-white text-center">
+            24 de Mayo 2024
+          </p>
+          {/* Contenedor Match */}
+          <div className="flex flex-row pt-5 px-1">
+            {/* Contenedor juego */}
+            <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
+              <div className="basis-1/3  flex justify-center items-center">
+                <img
+                  src="/cslogo.png"
+                  className="h-auto md:w-[80px] w-[40px]"
+                />
+              </div>
+            </div>
+            {/* Contenedor Logos Equipo */}
+            <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
+              {/* Contendedor 9z logo */}
+              <div className="basis-1/3  flex justify-center items-center">
+                <img src="/9z.png" className="h-auto w-[120px]" />
+              </div>
+              {/* Contendedor "VS"*/}
+              <div className="basis-1/3 flex justify-center items-center">
+                <p className="text-center">VS</p>
+              </div>
+              {/* Contendedor rival logo */}
+              <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
+                <img src="/recife.png" className="h-auto w-[100px]" />
+              </div>
+            </div>
+            {/* Contenedor info Match */}
+            <div className="basis-1/3 flex flex-col justify-center pl-3">
+              <a href="/cs2ac" className="text-sm font-medium text-white">
+                CS2 Academy
+              </a>
+              <p>
+                <a className="md:text-sm text-xs font-normal text-gray-400 ">
+                  15:00hs (AR)
+                </a>
+              </p>
+              <p>
+                <a className="hidden md:block text-sm font-normal text-gray-400 ">
+                Gamers Club Liga Serie A
+                </a>
+                <a className="md:hidden text-xs  font-normal text-gray-400 ">
+                Gamers Club Liga Serie A
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dia 4*/}
+        {/* Match 1*/}
+        <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
+          {/* Contenedor fecha */}
+          <p className="md:text-lg text-sm font-semibold  text-white text-center">
             27 de Mayo 2024
           </p>
           {/* Contenedor Match */}
@@ -569,7 +673,7 @@ const Partidos = () => {
           </div>
         </div>
 
-        {/* Dia 4*/}
+        {/* Dia 5*/}
         {/* Match 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}
@@ -621,7 +725,7 @@ const Partidos = () => {
           </div>
         </div>
 
-        {/* Dia 5*/}
+        {/* Dia 6*/}
         {/* Match 1*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 my-14 py-5">
           {/* Contenedor fecha */}

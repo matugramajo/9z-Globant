@@ -106,13 +106,14 @@ const Partidos = () => {
       </header>
       <main className="bg-[#000000] text-white">
         <div className="pt-14"></div>
-        {/* Dia 1*/}
+
+        {/* Dia 2*/}
         <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 pt-5">
           {/* Match 1*/}
           <div className="pb-5">
             {/* Contenedor fecha */}
             <p className="md:text-lg text-sm font-semibold  text-white text-center">
-              20 de Mayo 2024
+              22 de Mayo 2024
             </p>
             {/* Contenedor Match */}
             <div className="flex flex-row pt-5 px-1">
@@ -137,7 +138,7 @@ const Partidos = () => {
                 </div>
                 {/* Contendedor rival logo */}
                 <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                  <img src="/bestia.png" className="h-auto w-[100px]" />
+                  <img src="/corin.png" className="h-auto w-[100px]" />
                 </div>
               </div>
               {/* Contenedor info Match */}
@@ -147,7 +148,7 @@ const Partidos = () => {
                 </a>
                 <p>
                   <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                    16:00hs (AR)
+                    15:00hs (AR)
                   </a>
                 </p>
                 <p>
@@ -205,210 +206,6 @@ const Partidos = () => {
                   </a>
                   <a className="md:hidden text-xs  font-normal text-gray-400 ">
                   Gamers Club Liga Serie A
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Match 2*/}
-          <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
-            {/* Contenedor Match */}
-            <div className="flex flex-row pt-5 px-1">
-              {/* Contenedor juego */}
-              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img
-                    src="/cslogo.png"
-                    className="h-auto md:w-[80px] w-[60px]"
-                  />
-                </div>
-              </div>
-              {/* Contenedor Logos Equipo */}
-              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
-                {/* Contendedor 9z logo */}
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img src="/9z.png" className="h-auto w-[120px]" />
-                </div>
-                {/* Contendedor "VS"*/}
-                <div className="basis-1/3 flex justify-center items-center">
-                  <p className="text-center">VS</p>
-                </div>
-                {/* Contendedor rival logo */}
-                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                  <img src="/bestia.png" className="h-auto w-[100px]" />
-                </div>
-              </div>
-              {/* Contenedor info Match */}
-              <div className="basis-1/3 flex flex-col justify-center pl-3">
-                <a href="/cs2main" className="text-sm font-medium text-white">
-                  CS2 Main
-                </a>
-                <p>
-                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                    17:00hs (AR)
-                  </a>
-                </p>
-                <p>
-                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
-                    ESL Challenger League Season 47 South America
-                  </a>
-                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
-                    ESL Challenger
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Match 3*/}
-          <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
-            {/* Contenedor Match */}
-            <div className="flex flex-row pt-5 px-1">
-              {/* Contenedor juego */}
-              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img
-                    src="/cslogo.png"
-                    className="h-auto md:w-[80px] w-[60px]"
-                  />
-                </div>
-              </div>
-              {/* Contenedor Logos Equipo */}
-              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
-                {/* Contendedor 9z logo */}
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img src="/9z.png" className="h-auto w-[120px]" />
-                </div>
-                {/* Contendedor "VS"*/}
-                <div className="basis-1/3 flex justify-center items-center">
-                  <p className="text-center">VS</p>
-                </div>
-                {/* Contendedor rival logo */}
-                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                  <img src="/w7m.png" className="h-auto w-[100px]" />
-                </div>
-              </div>
-              {/* Contenedor info Match */}
-              <div className="basis-1/3 flex flex-col justify-center pl-3">
-                <a href="/cs2main" className="text-sm font-medium text-white">
-                  CS2 Main
-                </a>
-                <p>
-                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                    19:00hs (AR)
-                  </a>
-                </p>
-                <p>
-                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
-                    ESL Challenger League Season 47 South America
-                  </a>
-                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
-                    ESL Challenger
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Match 4*/}
-          <div className="border-t-2 bg-[#000000] border-gray-700 pb-5">
-            {/* Contenedor Match */}
-            <div className="flex flex-row pt-5 px-1">
-              {/* Contenedor juego */}
-              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img
-                    src="/cslogo.png"
-                    className="h-auto md:w-[80px] w-[60px]"
-                  />
-                </div>
-              </div>
-              {/* Contenedor Logos Equipo */}
-              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
-                {/* Contendedor 9z logo */}
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img src="/9z.png" className="h-auto w-[120px]" />
-                </div>
-                {/* Contendedor "VS"*/}
-                <div className="basis-1/3 flex justify-center items-center">
-                  <p className="text-center">VS</p>
-                </div>
-                {/* Contendedor rival logo */}
-                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                  <img src="/w7m.png" className="h-auto w-[100px]" />
-                </div>
-              </div>
-              {/* Contenedor info Match */}
-              <div className="basis-1/3 flex flex-col justify-center pl-3">
-                <a href="/cs2main" className="text-sm font-medium text-white">
-                  CS2 Main
-                </a>
-                <p>
-                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                    20:00hs (AR)
-                  </a>
-                </p>
-                <p>
-                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
-                    ESL Challenger League Season 47 South America
-                  </a>
-                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
-                    ESL Challenger
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Dia 2*/}
-        <div className="border rounded-lg bg-[#000000] border-gray-700 mb-14 pt-5">
-          {/* Match 1*/}
-          <div className="pb-5">
-            {/* Contenedor fecha */}
-            <p className="md:text-lg text-sm font-semibold  text-white text-center">
-              22 de Mayo 2024
-            </p>
-            {/* Contenedor Match */}
-            <div className="flex flex-row pt-5 px-1">
-              {/* Contenedor juego */}
-              <div className="flex md:basis-1/3 basis-1/4 md:justify-end justify-center items-center">
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img
-                    src="/cslogo.png"
-                    className="h-auto md:w-[80px] w-[60px]"
-                  />
-                </div>
-              </div>
-              {/* Contenedor Logos Equipo */}
-              <div className="flex flex-row md:basis-1/3 basis-2/4 justify-center">
-                {/* Contendedor 9z logo */}
-                <div className="basis-1/3  flex justify-center items-center">
-                  <img src="/9z.png" className="h-auto w-[120px]" />
-                </div>
-                {/* Contendedor "VS"*/}
-                <div className="basis-1/3 flex justify-center items-center">
-                  <p className="text-center">VS</p>
-                </div>
-                {/* Contendedor rival logo */}
-                <div className="md:basis-1/3  basis-1/4 flex justify-center items-center">
-                  <img src="/corin.png" className="h-auto w-[100px]" />
-                </div>
-              </div>
-              {/* Contenedor info Match */}
-              <div className="basis-1/3 flex flex-col justify-center pl-3">
-                <a href="/cs2main" className="text-sm font-medium text-white">
-                  CS2 Main
-                </a>
-                <p>
-                  <a className="md:text-sm text-xs font-normal text-gray-400 ">
-                    15:00hs (AR)
-                  </a>
-                </p>
-                <p>
-                  <a className="hidden md:block text-sm font-normal text-gray-400 ">
-                    ESL Challenger League Season 47 South America
-                  </a>
-                  <a className="md:hidden text-xs  font-normal text-gray-400 ">
-                    ESL Challenger
                   </a>
                 </p>
               </div>
